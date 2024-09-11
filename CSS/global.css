@@ -1,0 +1,134 @@
+/* Text */
+
+.text-center {
+    text-align: center;
+}
+
+.heading-small{
+    font-size: 1.25rem;
+}
+.heading-medium {
+    font-size: 1.5rem;
+}
+.heading-big {
+    font-size: 1.75rem;
+}
+
+/* Color */
+.bg {
+    background: #333;
+}
+
+/* size */
+.letter {
+    letter-spacing: 0.14rem;
+}
+.line {
+    line-height: 1.8rem;
+}
+.container {
+    margin: 0 auto;
+
+}
+
+
+
+/* Hero Hover */
+.hero, .btn{
+    transition: background-color 2s ease ; /*  main.css te eklememiz gereken yeri burada ekledik */
+    /* aynı zamanda bu satır, kutucuk hover durumdayken üzerinden çıklıdığında eski halini alması X saniye süreceğini gösterir. */
+}
+.hero:hover {
+    background-color: #00796b;
+    color: #FFFFFF;
+    /* transition:  2s ease; */
+}
+
+h1,h2, p {
+    
+    transition: color 1s ease !important; /* yazının hover hızını ayarlar */
+}
+
+.hero:hover .btn {
+    background-color:#6fa29c ;
+    color: #A25F65;
+    /* transition: background-color 0.5s ease, color 0.5s ease; */
+    
+}
+.hero:hover .btn:hover {
+    color: wheat;
+    background-color:#575757 !important;
+    transition: 1s ease !important;
+}
+.btn {
+    transition: background-color 1.8s ease !important; 
+
+}
+
+
+ /* About hover */
+ .about {
+    transition: background-color 1s ease;
+}
+.about:hover {
+    background-color: rgb(155, 124, 66);
+    /* transition:background-color 10s ease;
+    color: rgb(255, 255, 255); */
+}
+#aboutt {
+    transition: color 0.3s ease !important;
+}
+.about:hover #aboutt {
+    color: rgb(233, 225, 211);
+}
+
+/* projects */
+.projects{
+    color:rgb(87, 87, 135);
+    transition: background-color 1s ease;
+}
+.projects:hover {
+    color: rgb(231, 201, 144);
+    background-color:rgba(144, 98, 180, 0.717);
+}
+.project-card {
+    color:rgb(73, 71, 71);
+    transition: background-color 0.2s ease;
+}
+
+.project-card:hover {
+    color: rgb(193, 128, 63) !important;
+    background-color:rgb(188, 214, 188) ;
+}
+.projects:hover .project-card {
+    color:rgb(235, 183, 130)
+}
+
+/* Contact Me */
+.contact {
+    color: rgb(101, 67, 33);
+    transition: background-color 1s ease;
+}
+.contact:hover {
+    background-color:rgb(211, 182, 139);
+    color: whitesmoke
+}
+.contact textarea:hover ,input:hover {
+    background-color:rgb(229, 227, 227);
+}
+.contact form input:focus,.contact form textarea:focus {
+    outline: none;
+}
+.contact form button {
+    transition: background-color 1s ease;
+}
+/* .contact form button:hover{
+    background-color: wheat;
+    color: #00796b;
+} */
+.contact form button:hover {
+    background: #004d40; /* Daha koyu bir yeşil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Gölge efekti */
+    transform: scale(1.05); /* Butonu hafif büyütme */
+}
+
